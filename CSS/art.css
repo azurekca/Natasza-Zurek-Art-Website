@@ -1,0 +1,195 @@
+/* ---- Colours ---- */
+:root {
+  --color-0: #DDE1E5; 
+  --color-1: #5E6E7F; 
+  --color-2: #2F3D4C; 	/* Main Background Colour */
+  --color-3: #112234; 
+  --color-4: #000509; 
+}
+
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Spectral', serif;
+  background-color: var(--color-3);
+  color: var(--color-0);
+}
+
+header, .nav a {
+  font-family: 'Spectral', serif;
+  color: var(--color-0);
+  text-shadow: 2px 2px 4px var(--color-4);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.name {
+  margin: 0;
+}
+
+.site-description {
+  font-weight: 300;
+  letter-spacing: 9px;
+}
+.nav {
+	margin-top: .5em;
+	text-align: center;
+}
+
+.nav a{
+  font-size: 1.5em;
+	padding: .5em 1em;
+	display: block;
+}
+
+.nav a:hover {
+  color: var(--color-1);
+}
+
+h3, p {
+  margin: 0.2rem 0 0;
+}
+
+a {
+	text-decoration: none;
+  transition: all .4s;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-content {
+  margin: 2em auto;
+}
+
+footer {
+  padding: 1em 1em;
+}
+
+footer, h3, p {
+  color: var(--color-1);
+  font-weight: 400;
+}
+
+footer a {
+  color: var(--color-2)
+}
+
+footer a:hover {
+  color: var(--color-1);
+}
+
+a.instagram, a.facebook {
+  margin: 0 1rem;
+  fill: var(--color-1);
+}
+
+a.instagram:hover {
+  fill: #c32aa3;
+}
+
+a.facebook:hover {
+  fill: #1877f2;
+}
+
+.credits {
+  font-size: 0.7em;
+  color: var(--color-2);
+}
+
+/* ===================================== 
+   Grid & Flex Layout
+======================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.main-content {
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3em 1em;
+  align-items: center;
+}
+
+.card {
+  padding: 1em 1em;
+  text-align: center;
+  background-color: var(--color-3);
+}
+
+.art {
+  width: 100%;
+  height: auto;
+  border: solid 2px var(--color-0);
+  border-radius: 0.1em;
+  box-shadow: 0 0 10px 2px var(--color-4);
+}
+
+.social {
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: center;
+  
+}
+
+/*--------------------------
+	Media Queries
+	-------------------------*/
+  @media (min-width:800px) {
+    .main-header,
+    .nav,
+    .main-footer {
+      display: flex;
+    }
+    
+    .main-header {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .main-footer {
+      flex-direction: column;
+      margin-top: auto;
+    }
+  }
+  
+  @media (min-width: 1080px) {
+    .main-header {
+      flex-direction: row;
+      padding: 1.2em 2em;
+    }
+    
+    .name {
+      font-size: 3em;
+    }
+  }
