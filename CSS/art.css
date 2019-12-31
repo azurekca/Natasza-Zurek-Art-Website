@@ -47,7 +47,8 @@ h1 {
 
 .site-description {
   font-weight: 300;
-  letter-spacing: 9px;
+  font-size: 1.3em;
+  letter-spacing: 7px;
 }
 .nav {
 	margin-top: .5em;
@@ -158,9 +159,49 @@ footer {
   display: flex;
   margin-bottom: 1em;
   justify-content: center;
-  
 }
 
+/*--------------------------
+	Bio
+	-------------------------*/
+
+  .bio {
+    display: flex;
+    margin: auto;
+    padding: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bio-text {
+    min-width: 180px;
+    max-width: 600px;
+  }
+
+  .bio-text p {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0 0 0.6em;
+  }
+
+  .bio-text:first-child {
+    margin-top: 4rem;
+  }
+
+
+  .bio-text p + p {
+    text-indent: 0.5em;
+  }
+
+  .bio-pic {
+    padding: 4rem;
+    max-width: 50%;
+    align-self: center;
+  }
+
+  strong {
+    font-weight: 600;
+  }
 /*--------------------------
 	Media Queries
 	-------------------------*/
@@ -180,6 +221,9 @@ footer {
     .main-footer {
       flex-direction: column;
       margin-top: auto;
+    }
+
+    .bio {
     }
   }
   
