@@ -1,8 +1,8 @@
 /* ---- Colours ---- */
 :root {
   --color-0: #DDE1E5; 
-  --color-1: #A7AFB9; /* Was previously this #5E6E7F */
-  --color-2: #2F3D4C; 	
+  --color-1: #A7AFB9; /* Was previously #5E6E7F */
+  --color-2: #54606C; /* was previously #2F3D4C  */ 	
   --color-3: #112234;  /* Main Background Colour */
   --color-4: #000509; 
 }
@@ -166,46 +166,45 @@ footer {
 	-------------------------*/
 
   .bio {
-    display: flex;
+    width: 100%;
     margin: auto;
     padding: 2em;
-    justify-content: center;
-    flex-wrap: wrap;
+    
   }
   .bio-text {
     min-width: 180px;
     max-width: 600px;
   }
 
-  .bio-text p {
+  .bio p {
     text-align: left;
     font-size: 1.5rem;
     padding: 0;
     margin: 0 0 0.6em;
   }
 
-  .bio-text:first-child {
-    margin-top: 4rem;
-  }
-
-
-  .bio-text p + p {
-    text-indent: 0.5em;
-  }
-
   .bio-pic {
-    padding: 4rem;
-    max-width: 50%;
-    align-self: center;
+    margin-bottom: 1em;
   }
-
+  
   strong {
     font-weight: 600;
   }
-/*--------------------------
+  /*--------------------------
 	Media Queries
-	-------------------------*/
-  @media (min-width:800px) {
+  -------------------------*/
+  @media (min-width: 530px) {
+    .bio-pic {
+      float: left;
+      margin: 0 2em 1em 0;
+    }
+
+    .bio {
+      width: 90%;
+    }
+  }
+
+  @media (min-width:740px) {
     .main-header,
     .nav,
     .main-footer {
@@ -224,6 +223,7 @@ footer {
     }
 
     .bio {
+      width: 80%;
     }
   }
   
@@ -235,5 +235,9 @@ footer {
     
     .name {
       font-size: 3em;
+    }
+
+    .bio {
+      width: 60%;
     }
   }
