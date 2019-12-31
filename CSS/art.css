@@ -41,6 +41,10 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 .name {
   margin: 0;
 }
@@ -78,7 +82,8 @@ ol,
 ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+  list-style: none;
+  text-align: left;
 }
 
 .main-content {
@@ -102,22 +107,37 @@ footer a:hover {
   color: var(--color-1);
 }
 
-a.instagram, a.facebook {
-  margin: 0 1rem;
-  fill: var(--color-1);
-}
-
-a.instagram:hover {
+.instagram:hover {
   fill: #c32aa3;
 }
 
-a.facebook:hover {
+.facebook:hover {
   fill: #1877f2;
+}
+
+.envelope:hover {
+  fill: #04E762;
+}
+
+.contact-list li {
+  margin: 0.5em 0;
+}
+.contact-list a {
+  color: var(--color-1);
 }
 
 .credits {
   font-size: 0.7em;
   color: var(--color-2);
+}
+
+svg {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  margin: 0 1rem;
+  fill: var(--color-1);
 }
 
 /* ===================================== 
