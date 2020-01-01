@@ -8,7 +8,7 @@
 }
 
 /* ===================================== 
-   Page Styles
+   Page Styles that are on every page
 ======================================== */
 
 * {
@@ -45,11 +45,11 @@ h2 {
   font-weight: 600;
 }
 
-.name {
+.header-title {
   margin: 0;
 }
 
-.site-description {
+.header-subtitle {
   font-weight: 300;
   font-size: 1.3em;
   letter-spacing: 7px;
@@ -86,15 +86,11 @@ ul {
   text-align: left;
 }
 
-.main-content {
-  margin: 2em auto;
-}
-
 footer {
   padding: 1em 1em;
 }
 
-footer, h3, p {
+footer, h3, p, ul {
   color: var(--color-1);
   font-weight: 400;
 }
@@ -119,13 +115,6 @@ footer a:hover {
   fill: #04E762;
 }
 
-.contact-list li {
-  margin: 0.5em 0;
-}
-.contact-list a {
-  color: var(--color-1);
-}
-
 .credits {
   font-size: 0.7em;
   color: var(--color-2);
@@ -138,6 +127,10 @@ svg {
   vertical-align: middle;
   margin: 0 1rem;
   fill: var(--color-1);
+}
+
+strong {
+  font-weight: 600;
 }
 
 /* ===================================== 
@@ -153,9 +146,10 @@ footer {
   margin-top: auto;
 }
 
-.main-content {
+.grid-container {
   display: grid;
   width: 85%;
+  margin: 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3em 1em;
   align-items: center;
@@ -182,44 +176,58 @@ footer {
 }
 
 /*--------------------------
-	Bio
+	container
 	-------------------------*/
-
-  .bio {
+  .container {
     width: 100%;
     margin: auto;
     padding: 2em;
+  }
     
-  }
-  .bio-text {
-    min-width: 180px;
-    max-width: 600px;
-  }
-
-  .bio p {
+  .container p {
     text-align: left;
     font-size: 1.5rem;
     padding: 0;
     margin: 0 0 0.6em;
   }
-
+  
+  /*--------------------------
+	styles for more specific content
+  -------------------------*/
+  
+  .bio-text {
+    min-width: 180px;
+    max-width: 600px;
+  }
   .bio-pic {
     margin-bottom: 1em;
   }
   
-  strong {
-    font-weight: 600;
+  .contact-list {
+    display: inline-block;
   }
+  .contact-list li {
+    margin: 0.5em 0;
+  }
+  .contact-list a {
+    color: var(--color-1);
+  }
+  
+  .price-list-section p {
+    line-height: 1.4em;
+    margin: 0 0 1em;
+  }
+
   /*--------------------------
 	Media Queries
   -------------------------*/
-  @media (min-width: 530px) {
+  @media (min-width: 558px) {
     .bio-pic {
       float: left;
       margin: 0 2em 1em 0;
     }
 
-    .bio {
+    .container {
       width: 90%;
     }
   }
@@ -242,7 +250,7 @@ footer {
       margin-top: auto;
     }
 
-    .bio {
+    .container {
       width: 80%;
     }
   }
@@ -253,11 +261,11 @@ footer {
       padding: 1.2em 2em;
     }
     
-    .name {
+    .header-title {
       font-size: 3em;
     }
 
-    .bio {
+    .container {
       width: 60%;
     }
   }
