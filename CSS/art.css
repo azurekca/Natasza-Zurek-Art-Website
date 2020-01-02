@@ -201,6 +201,7 @@ footer {
   }
   .bio-pic {
     margin-bottom: 1em;
+    max-width: 100%;
   }
 
   .contact-text {
@@ -228,10 +229,6 @@ footer {
 	Media Queries
   -------------------------*/
   @media (min-width: 558px) {
-    .bio-pic {
-      float: left;
-      margin: 0 2em 1em 0;
-    }
 
     .container {
       width: 90%;
@@ -271,6 +268,17 @@ footer {
       font-size: 3em;
     }
 
+    .container {
+      width: 70%;
+    }
+
+    .bio-pic {
+      float: left;
+      margin: 0 2em 1em 0;
+    }
+  }
+
+  @media (min-width: 1500px) {
     .container {
       width: 60%;
     }
