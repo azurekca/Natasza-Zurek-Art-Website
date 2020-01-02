@@ -202,7 +202,10 @@ footer {
   .bio-pic {
     margin-bottom: 1em;
   }
-  
+
+  .contact-text {
+    margin: 0 0 1em;
+  }  
   .contact-list {
     display: inline-block;
   }
@@ -215,6 +218,9 @@ footer {
   
   .price-list-section p {
     line-height: 1.4em;
+    margin: 0 0 1.1em;
+  }
+  .price-list-section h2 {
     margin: 0 0 1em;
   }
 
