@@ -1,5 +1,5 @@
 # Natasza-Zurek-Art-Website
-Static website to showcase Natasza Zurek's art.
+Static website to showcase Natasza Zurek's art    nataszazurekart.com
 
 This is my first website. I'm pretty happy with the way it turned out. If you have any constructive feedback for me, i'd love to hear it.
 
