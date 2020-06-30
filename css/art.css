@@ -95,6 +95,21 @@ footer, h3, p, ul {
   font-weight: 400;
 }
 
+.web-credit a {
+  color: var(--color-0);
+  background-image: linear-gradient(var(--color-0), var(--color-0)), linear-gradient(var(--color-3), var(--color-3));
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+}
+
+.web-credit a:hover,
+.web-credit a:focus {
+  background-size: calc(100%) 2px, auto;
+  color: var(--color-0);
+}
+
 footer a {
   color: var(--color-2)
 }
