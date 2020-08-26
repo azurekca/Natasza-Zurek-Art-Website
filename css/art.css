@@ -69,7 +69,7 @@ h2 {
   color: var(--color-1);
 }
 
-h3, p {
+figcaption, p {
   margin: 0.2rem 0 0;
 }
 
@@ -90,7 +90,7 @@ footer {
   padding: 1em 1em;
 }
 
-footer, h3, p, ul {
+footer, figcaption, p, ul {
   color: var(--color-1);
   font-weight: 400;
 }
