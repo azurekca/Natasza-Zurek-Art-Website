@@ -1,10 +1,10 @@
 /* ---- Colours ---- */
 :root {
-  --color-0: #DDE1E5; 
-  --color-1: #A7AFB9; /* Was previously #5E6E7F */
-  --color-2: #54606C; /* was previously #2F3D4C  */ 	
-  --color-3: #112234;  /* Main Background Colour */
-  --color-4: #000509; 
+  --color-0: #dde1e5;
+  --color-1: #a7afb9; /* Was previously #5E6E7F */
+  --color-2: #54606c; /* was previously #2F3D4C  */
+  --color-3: #112234; /* Main Background Colour */
+  --color-4: #000509;
 }
 
 /* ===================================== 
@@ -18,7 +18,8 @@
   border: 0;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
 }
 
@@ -31,7 +32,8 @@ body {
   color: var(--color-0);
 }
 
-header, .nav a {
+header,
+.nav a {
   font-family: 'Spectral', serif;
   color: var(--color-0);
   text-shadow: 2px 2px 4px var(--color-4);
@@ -43,6 +45,7 @@ h1 {
 
 h2 {
   font-weight: 600;
+  margin: 0 0 1em;
 }
 
 .header-title {
@@ -55,33 +58,34 @@ h2 {
   letter-spacing: 7px;
 }
 .nav {
-	margin-top: .5em;
-	text-align: center;
+  margin-top: 0.5em;
+  text-align: center;
 }
 
-.nav a{
+.nav a {
   font-size: 1.5em;
-	padding: .5em 1em;
-	display: block;
+  padding: 0.5em 1em;
+  display: block;
 }
 
 .nav a:hover {
   color: var(--color-1);
 }
 
-figcaption, p {
+figcaption,
+p {
   margin: 0.2rem 0 0;
 }
 
 a {
-	text-decoration: none;
-  transition: all .4s;
+  text-decoration: none;
+  transition: all 0.4s;
 }
 
 ol,
 ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: left;
 }
@@ -90,18 +94,22 @@ footer {
   padding: 1em 1em;
 }
 
-footer, figcaption, p, ul {
+footer,
+figcaption,
+p,
+ul {
   color: var(--color-1);
   font-weight: 400;
 }
 
 .web-credit a {
   color: var(--color-0);
-  background-image: linear-gradient(var(--color-0), var(--color-0)), linear-gradient(var(--color-3), var(--color-3));
+  background-image: linear-gradient(var(--color-0), var(--color-0)),
+    linear-gradient(var(--color-3), var(--color-3));
   background-size: 0 2px, auto;
   background-repeat: no-repeat;
   background-position: center bottom;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .web-credit a:hover,
@@ -111,7 +119,7 @@ footer, figcaption, p, ul {
 }
 
 footer a {
-  color: var(--color-2)
+  color: var(--color-2);
 }
 
 footer a:hover {
@@ -127,7 +135,7 @@ footer a:hover {
 }
 
 .envelope:hover {
-  fill: #04E762;
+  fill: #04e762;
 }
 
 .credits {
@@ -146,6 +154,18 @@ svg {
 
 strong {
   font-weight: 600;
+  color: var(--color-0);
+}
+
+.text-left {
+  text-align: left;
+}
+.clear-float {
+  clear: both;
+}
+
+.container p.margin-top-extra {
+  margin-top: 2rem;
 }
 
 /* ===================================== 
@@ -193,108 +213,104 @@ footer {
 /*--------------------------
 	container
 	-------------------------*/
-  .container {
-    width: 100%;
-    margin: auto;
-    padding: 2em;
-  }
-    
-  .container p {
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0 0 0.6em;
-  }
-  
-  /*--------------------------
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+}
+
+.container p {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0 0 0.6em;
+}
+
+/*--------------------------
 	styles for more specific content
   -------------------------*/
-  
-  .bio-text {
-    min-width: 180px;
-    max-width: 600px;
-  }
-  .bio-pic {
-    margin-bottom: 1em;
-    max-width: 100%;
-  }
 
-  .contact-text {
-    margin: 0 0 1em;
-  }  
-  .contact-list {
-    display: inline-block;
-  }
-  .contact-list li {
-    margin: 0.5em 0;
-  }
-  .contact-list a {
-    color: var(--color-1);
-  }
-  
-  .price-list-section p {
-    line-height: 1.4em;
-    margin: 0 0 1.1em;
-  }
-  .price-list-section h2 {
-    margin: 0 0 1em;
-  }
+.bio-text {
+  min-width: 180px;
+  max-width: 600px;
+}
+.bio-pic {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
 
-  /*--------------------------
+.contact-list {
+  display: inline-block;
+}
+.contact-list li {
+  margin: 0.5em 0;
+}
+.contact-list a {
+  color: var(--color-1);
+}
+
+.price-list-section p {
+  line-height: 1.4em;
+  margin: 0 0 1.1em;
+}
+.price-list-section h2 {
+  margin: 0 0 1em;
+}
+
+/*--------------------------
 	Media Queries
   -------------------------*/
-  @media (min-width: 558px) {
+@media (min-width: 558px) {
+  .container {
+    width: 90%;
+  }
+}
 
-    .container {
-      width: 90%;
-    }
+@media (min-width: 740px) {
+  .main-header,
+  .nav,
+  .main-footer {
+    display: flex;
   }
 
-  @media (min-width:740px) {
-    .main-header,
-    .nav,
-    .main-footer {
-      display: flex;
-    }
-    
-    .main-header {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .main-footer {
-      flex-direction: column;
-      margin-top: auto;
-    }
-
-    .container {
-      width: 80%;
-    }
-  }
-  
-  @media (min-width: 1080px) {
-    .main-header {
-      flex-direction: row;
-      padding: 1.2em 2em;
-    }
-    
-    .header-title {
-      font-size: 3em;
-    }
-
-    .container {
-      width: 70%;
-    }
-
-    .bio-pic {
-      float: left;
-      margin: 0 2em 1em 0;
-    }
+  .main-header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  @media (min-width: 1500px) {
-    .container {
-      width: 60%;
-    }
+  .main-footer {
+    flex-direction: column;
+    margin-top: auto;
   }
+
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .main-header {
+    flex-direction: row;
+    padding: 1.2em 2em;
+  }
+
+  .header-title {
+    font-size: 3em;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .bio-pic {
+    float: left;
+    margin: 0 2em 1em 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 60%;
+  }
+}
